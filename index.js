@@ -28,12 +28,6 @@ wss.on('connection', (ws) => {
 
 let data = null;
 
-// Определение размера карты
-const mapSize = {
-    width: 8000,  // Ширина карты
-    height: 8000  // Высота карты
-};
-
 // Функция для первоначального запроса данных
 const fetchInitialData = async () => {
     try {
@@ -70,6 +64,7 @@ const fetchDataAndBroadcast = async () => {
         const enemies = data.enemies;
         const deltaTime = 0.35;
         const maxAccel = data.maxAccel || 10;
+        const mapSize = data.mapSize || {x: 9000, y: 9000};
 
         let importantEventOccurred = false; // Флаг важных событий
 
