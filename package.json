@@ -1,0 +1,19 @@
+{
+  "name": "desert",
+  "version": "1.0.0",
+  "description": "desert-mechanics server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fanzholl",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "desert": "file:",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "ws": "^8.18.0"
+  }
+}
